@@ -1,10 +1,7 @@
-*.log
-*.pot
-*.pyc
-__pycache__/
-.vscode/
-.directory
 venv/
-dist/
+__pycache__/
+*.ini
+.eggs/
 *.egg-info
-
+dist/
+build/
