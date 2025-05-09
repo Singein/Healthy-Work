@@ -110,8 +110,7 @@ class MainWindow(QWidget):
 
     def start_work(self):
         for mask in self.masks:
-            if mask.primary:
-                mask.button.hide()
+            mask.back_to_work()
             mask.hide()
 
         self.timer_work.start(self.work_time)

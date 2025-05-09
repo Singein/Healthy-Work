@@ -1,8 +1,7 @@
 from PyQt5.QtWidgets import (
-    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, 
+    QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
     QSpinBox, QCheckBox, QPushButton, QFileDialog, QMessageBox
 )
-from PyQt5.QtCore import Qt
 
 from HealthyWork.config import Config
 
