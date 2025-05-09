@@ -383,15 +383,11 @@ class Mask(QWidget):
                 painter.fillPath(path, color)
 
     def keyPressEvent(self, event):
-        # 忽略空格键事件，防止触发按钮
-        if event.key() == Qt.Key_Space:
-            event.ignore()
-        else:
-            super().keyPressEvent(event)
+        event.ignore()
 
-    # def closeEvent(self, event: QCloseEvent):
-    #     # 忽略关闭事件，防止窗口被关闭
-    #     event.ignore()
+    def closeEvent(self, event: QCloseEvent):
+        # 忽略关闭事件，防止窗口被关闭
+        event.ignore()
 
     def show_background_picture(self):
         """随机展示一张壁纸"""
