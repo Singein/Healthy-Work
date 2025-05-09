@@ -130,3 +130,10 @@ class Mask(QWidget):
     def closeEvent(self, event: QCloseEvent):
         # 忽略关闭事件，防止窗口被关闭
         event.ignore()
+
+    def keyPressEvent(self, event):
+        # 忽略空格键事件，防止触发按钮
+        if event.key() == Qt.Key_Space:
+            event.ignore()
+        else:
+            super().keyPressEvent(event)
