@@ -2,7 +2,7 @@ import os
 import random
 
 from PyQt5.QtCore import Qt, QDir
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QCloseEvent
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton
 
 from HealthyWork.config import Config
@@ -126,3 +126,7 @@ class Mask(QWidget):
         self.label_count.hide()
         self.label_message.hide()
         self.button.show()
+
+    def closeEvent(self, event: QCloseEvent):
+        # 忽略关闭事件，防止窗口被关闭
+        event.ignore()

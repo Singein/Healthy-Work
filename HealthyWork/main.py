@@ -9,8 +9,10 @@ from HealthyWork.app import MainWindow
 
 def run_app():
     app = QApplication(sys.argv)
+    app.setQuitOnLastWindowClosed(False)
     QCoreApplication.setApplicationName("HealthyWork")
     QGuiApplication.setApplicationDisplayName("HealthyWork")
+
     hw = MainWindow()
     hw.start()
     sys.exit(app.exec_())
