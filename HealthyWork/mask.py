@@ -293,7 +293,7 @@ class Mask(QWidget):
 
         # 按钮位置
         self.button.resize(self.button.sizeHint())
-        button_y = center_y + 100
+        button_y = center_y
         self.button.move(
             (window_size.width() - self.button.width()) // 2,
             button_y
