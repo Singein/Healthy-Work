@@ -1,0 +1,26 @@
+CHANGES
+=======
+
+v0.3.0
+------
+
+* [release] 0.3.0
+* 美化Mask界面
+* 美化Mask界面
+* 美化Mask界面
+* 美化Mask界面
+* 修复空格键问题
+* 新增设置界面
+* 添加pyinstaller 打包指令
+* 已支持 多屏显示器
+* Update README.md
+* update: version 1.1.0
+* docs: readme
+* 增加了显示壁纸和播放音乐的容错
+* refactor: pack up
+* changed: image name
+* changed: README.md
+* changed: README.md
+* rm: pycache
+* ready to publish
+* fixed some bug
