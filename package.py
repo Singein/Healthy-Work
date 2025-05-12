@@ -5,6 +5,6 @@ package = {
     'email': 'singein@outlook.com',
     'scripts': {
         'default': 'echo 请输入明确的命令名称',
-        'build-exe': 'pyinstaller -F -w -i app.ico HealthyWork/main.py'
+        'build-exe': 'pyinstaller -F -w -i app.ico --add-data="app.ico;HealthyWork" HealthyWork/main.py'
     }
 }

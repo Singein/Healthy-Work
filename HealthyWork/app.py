@@ -39,7 +39,9 @@ class MainWindow(QWidget):
     def init_tray_icon(self):
         # 创建系统托盘图标
         self.tray_icon = QSystemTrayIcon(self)
-        self.tray_icon.setIcon(QIcon("app.ico"))  # 设置托盘图标
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(base_dir, "app.ico")
+        self.tray_icon.setIcon(QIcon(icon_path))  # 设置托盘图标
         self.tray_icon.setToolTip("HealthyWork - 保护你的健康")
         
         # 创建托盘菜单
